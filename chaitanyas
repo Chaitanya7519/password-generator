@@ -1,0 +1,12 @@
+import secrets
+import string
+# Define character sets
+letters = string.ascii_letters
+digits = string.digits
+special_chars = string.punctuation
+alphabet = letters + digits + special_chars
+# Password length
+pwd_length = 12
+# Generate password
+password = ''.join(secrets.choice(alphabet) for _ in range(pwd_length))
+print("Generated Password:", password)
